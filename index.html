@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <style>
+        
+      *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; 
+        }
+        .container{
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgb(253, 248, 237); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow:scroll;
+
+        }
+        .box{
+            min-width:200px;
+            min-height: 310px;
+            height: 310px;
+            background-color: rgba(245, 245, 245, 0.897);
+         margin: 30px; 
+         border-radius: 10px;
+          box-shadow: 8px 8px 10px darkgray ; 
+    
+        }
+        .box1{
+             height: 200px;
+             width: 200px;
+            background-image: url(/coffe1.png);
+            background-size: contain;
+             background-repeat: no-repeat; 
+            border-radius: 10px;
+        }
+        .box2{
+             height: 200px;
+             width: 200px;
+            background-image: url(/coffe2.png);
+            background-size: contain;
+             background-repeat: no-repeat; 
+            border-radius: 10px;
+        }
+        .box3{
+             height: 200px;
+             width: 200px;
+            background-image: url(/coffe3.png);
+            background-size: contain;
+             background-repeat: no-repeat; 
+            border-radius: 10px;
+        }
+        .box4{
+             height: 200px;
+             width: 200px;
+            background-image: url(/coffe4.png);
+            background-size: contain;
+             background-repeat: no-repeat; 
+            border-radius: 10px;
+        }
+        .coffe1{
+            font-weight: bolder;
+              
+        }
+        .quantity{ 
+            color: rgba(56, 56, 56, 0.959);
+            
+        }
+        .cost{
+           
+        }
+        .btn{
+           font-weight: bolder;
+             margin-top: 6px;
+            padding: 7px;
+        color: red;
+         border-radius: 5px;
+         cursor: pointer;
+         border: 1px solid grey;
+         border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: rgb(112, 236, 112);
+        }
+        .thickness{
+           
+            color: rgba(82, 81, 81, 0.959);
+        }
+        .text{ 
+           
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+       @media(max-width:1100px){
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+       }
+         @media(max-width:600px)
+         {
+            .container{
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                 overflow: scroll;
+            }
+            .box{
+                font-size: medium; 
+            }
+         }
+        /* @media(max-width:400px){
+        .container{
+            flex-direction: column;
+            align-items: center; 
+        }
+        .box{
+            font-size: small;
+        }
+       }  */
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+     <div class="box">
+        <div class="box1">
+        </div>
+        <div class="text">
+       <span class="coffe1">Vietnamese Coffee</span>
+       <span class="quantity">450ml</span>
+       <span class="cost"><b>&#8377;189</b> <s class="thickness">&#8377;199</s></span>
+       <button class="btn"> Add to Cart</button>
+    </div>
+     </div>
+     <div class="box">
+        <div class="box2">
+        </div>
+        <div class="text">
+       <span class="coffe1">Spanish Coffee</span>
+       <span class="quantity">350ml</span>
+       <span class="cost"><b>&#8377;169</b> <s class="thickness">&#8377;179</s></span>
+       <button class="btn"> Add to Cart</button>
+    </div>
+     </div>
+      <div class="box">
+        <div class="box3">
+        </div>
+        <div class="text">
+       <span class="coffe1">Americano</span>
+       <span class="quantity">250ml</span>
+       <span class="cost"><b>&#8377;129</b> <s class="thickness">&#8377;149</s></span>
+       <button class="btn"> Add to Cart</button>
+    </div>
+      </div>
+       <div class="box">
+        <div class="box4">
+        </div>
+        <div class="text">
+       <span class="coffe1">Filter Coffee</span>
+       <span class="quantity">250ml</span>
+       <span class="cost"><b>&#8377;109</b> <s class="thickness">&#8377;129</s></span>
+       <button class="btn"> Add to Cart</button>
+    </div>
+      </div>
+    </div>
+</body>
+</html>
